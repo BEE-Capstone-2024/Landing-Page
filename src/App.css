@@ -4,6 +4,10 @@
 }
 
 body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
   margin: 0;
 }
@@ -237,7 +241,7 @@ form {
   align-items: center;
 }
 form button {
-  width: 80%;
+  width: 70%;
   height: 16%;
   border-radius: 1.2rem;
   color: #00a25a;
@@ -452,7 +456,7 @@ p span {
     height: auto;
   }
   .teamSectionOne {
-    padding: 23rem 18rem;
+    padding: 18rem 18rem;
   }
   .teamSectionOne img {
     width: 20%;
@@ -482,6 +486,10 @@ p span {
     top: 74%;
   }
   .teamSectionOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
     background-image: url("/assets/upperDotTeam.svg");
@@ -500,7 +508,8 @@ p span {
     font-size: 2.75rem;
   }
   .teamSectionOne p {
-    padding: 2rem;
+    width: 70%;
+    padding: 0.5rem;
     margin: 0 10rem;
   }
 
@@ -570,7 +579,7 @@ p span {
     background-image: url("/assets/lowerBackgroundTeam.svg");
     background-repeat: no-repeat;
     /* background-size: 80rem 60rem; */
-    background-size: 50%;
+    background-size: 90%;
     background-position: bottom;
     background-position: right;
   }
@@ -590,7 +599,7 @@ p span {
   }
   .sectionOne h1 {
     font-size: 4.375rem;
-    width: 56%;
+    width: 80%;
   }
   .sectionOne p {
     font-size: 1.75rem;
@@ -620,14 +629,14 @@ p span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    grid-gap: 5rem;
+    grid-gap: 2rem;
   }
   .card {
     padding-left: 2rem;
-    width: 34.375rem;
+    width: 21.375rem;
     display: flex;
     flex-direction: column;
-    height: 21.125rem;
+    height: 14.125rem;
     justify-content: center;
     align-content: center;
     align-items: flex-start;
@@ -635,17 +644,17 @@ p span {
   }
   .card h4 {
     color: #003b22;
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     font-weight: 700;
   }
   .card .featureDescription {
     align-items: flex-start;
-    width: 65%;
+    width: 100%;
     gap: 1rem;
     margin-top: 0.5rem;
   }
   .featureDescription p {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   .featureIcon {
     width: 6.25rem;
@@ -659,7 +668,7 @@ p span {
   .sectionThree {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    height: 100vh;
+    height: 100%;
   }
   .sectionThree__left {
     background-image: url(/assets/homePgBtom.svg);
@@ -672,18 +681,26 @@ p span {
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
   .sectionThree__right h1 {
-    width: 22.9rem;
-    height: 5.5rem;
-    font-size: 2.5rem;
+    width: 45%;
+    /* height: 5.5rem; */
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 125%;
     text-align: center;
   }
+  .sectionThree__right--inputCard {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f8fb;
+    /* margin: 2rem; */
+    height: 50%;
+    border-radius: 0.75rem;
+  }
   .sectionThree__right .sectionThree__right--inputCard form {
-    width: 34.125rem;
+    width: 24.125rem;
     height: auto;
     padding: 2rem;
     display: flex;
@@ -692,10 +709,11 @@ p span {
   }
   .inputField {
     width: 90%;
+    height: 24%;
   }
   .sectionThree__right .sectionThree__right--inputCard form button {
-    width: 26.625rem;
-    height: 5.25rem;
+    width: 21.625rem;
+    height: 6rem;
     background-color: #00a25a;
     color: #fff;
   }
